@@ -20,9 +20,17 @@ const Article = ({ data }) => {
                     <h4 className="card-title">
                         {title}
                     </h4>
+                    <p className="card-text">
+                        {description}
+                    </p>
+                    <p className="card-text">
+                        {source.name}
+                    </p>
+                    <a href={url} target="_blank" className="btn btn-primary d-block">
+                        Read Article
+                    </a>
                 </div>
             </div>
-            <h4>Article</h4>
         </div>
     );
 }
